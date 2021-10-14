@@ -1,0 +1,398 @@
+/* reset code and common code starts here */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type:none;
+    text-decoration: none;
+    outline: 0;
+    font-weight: 400;
+}
+
+html{
+    background-color: #fafafa;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    /* font-family: 'Italianno', cursive;
+    font-family: 'Open Sans', sans-serif; */
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: #fff;
+    width: 120rem;
+    height: auto;
+    max-width: 100%;
+    margin: auto;
+    box-shadow: 0.1rem 0.1rem 0.1rem #c4c4c4,
+                -0.1rem 0rem 0.1rem #c4c4c4;
+}
+/* reset code and common code ends here */
+/* header starts here */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    color: rgb(255, 255, 255);
+    padding:2rem 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    min-height: 5vh;
+}
+nav li{
+    display: inline-block;
+    margin-right: 2rem;
+    padding: 1rem;
+    transition: all 0.4s;
+}
+nav li:last-child{
+    margin-right: 0;
+}
+nav li:hover{
+background: #1913d5;
+border-radius:.6rem;
+color:blanchedalmond;
+}
+.nav-link:hover{
+    color:blanchedalmond;
+}
+.nav-link{
+    font-size: 1.8rem;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.signbtn{
+    padding: .8rem 2rem;
+    background: red;
+    border-radius: 2rem;
+}
+.signbtn:hover{
+    background: rgb(189, 105, 105);
+}
+nav li:last-child:hover{
+    background-color: black;
+}
+/* header ends here */
+/* banner starts here */
+#banner{
+    background:rgb(253, 212, 212);
+    display: flex;
+    height: 50rem;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+    padding-bottom:5rem;
+}
+.banner-text{
+    width:400px;
+}
+.banner-text a{
+font-size: 1.6rem;
+}
+.banner-text h1{
+    font-size: 3.6rem;
+    font-weight: bold;
+    margin: 1rem auto;
+}
+.banner-text span{
+    font-size: 3.6rem;
+    font-weight: bold;
+    color: rgb(146, 146, 32);
+}
+.banner-text p{
+    font-size: 1.6rem;
+    width: 300px;
+    margin-bottom: 2.5rem;
+}
+.banner-text button{
+    width: 15rem;
+    height: 4rem;
+    background-color: yellowgreen;
+    border: none;
+    font-size: 1.7rem;
+    border-radius: 2rem;
+}
+.banner-text button:hover{
+    border: 1px solid black;
+    background: transparent;
+}
+/* .banner-image{
+    height: 400px;
+} */
+.banner-img{
+    width: 100%;
+    height: 40rem;
+    object-fit:cover;
+}
+/* banner ends here */
+
+/* item starts here */
+#item{
+    width: 100%;
+    height: 50rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+    
+}
+.item__content{
+    width: 25rem;
+    height: 25rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transition: all .5s;
+}
+.item__content:hover{
+    box-shadow: 1px 1px 30px 0px rgb(196, 165, 165);
+    transform: scale(1.07);
+}
+.item__content-img{
+    width: 10rem;
+    height: 10rem;
+    
+}
+.item__content h3{
+font-size: 2rem;
+padding: 2rem 0;
+}
+.item__content a{
+    font-size: 1.6rem;
+}
+/* item ends here */
+
+/* course item starts here */
+#courses{
+    text-align: center;
+    height: auto;
+}
+#courses h1{
+    font-size: 3.6rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    
+}
+.course-main{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    height: 70rem;
+}
+.course-body{
+    width: 35rem;
+    height: auto;
+    background-color:white;
+    padding: 2rem 2rem 0rem 2rem;
+    text-align: left;
+    border-radius: 1.5rem;
+    box-shadow: 1px 1px 30px 0px rgb(196, 165, 165);
+}
+.course-body h3{
+    font-size: 2.5rem;
+    margin-top: 2rem;
+}
+.course-body p{
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+}
+.course-body a{
+    font-size: 1.6rem;
+    padding: 0.5em 2rem;
+    border: 1px solid black;
+    border-radius: 2rem;
+    background-color: coral;
+    transition: all 1s;
+    color: white; 
+} 
+.course-body a:hover{
+background: transparent;
+color: black;
+}
+.course-img{
+    width: 100%;
+    object-fit: fill;
+    display: flex;
+    justify-content: center;
+}
+/* foot */
+.course-foot{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+.foot-left{
+    display: flex;
+}
+.foot-right{
+    display: flex;
+}
+.foot-left p{
+   padding-left: 1rem;
+}
+.foot-right p{
+    padding-left: 1rem;
+ }
+   
+.foot-imgleft{
+    width: 3rem;
+    height: 3rem;
+   
+}
+/* course item ends here */
+/* testimonial start */
+#testimonial{
+    text-align: center;
+}
+#testimonial h1{
+    font-size: 3.6rem;
+    font-weight: bold;
+    display: block;
+}
+.test-body{
+    width: 100%;
+    height: 40rem;
+    padding-left: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+.test-body p{
+    width: 35rem;
+    font-size: 1.5rem;
+    text-align: justify;
+}
+.test-bodyimg{
+    width: 15rem;
+    height: 15rem;
+}
+/* testimonial end */
+/* course link */
+.course-list{
+    width: 100%;
+    height: 40rem;
+    background: black;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    padding: 10rem;
+    font-size: 1.4rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.course-list h6{
+    font-size: 2.3rem;
+    margin-bottom: 1rem;
+}
+ul li{
+    padding-bottom:.71rem ;
+}
+.same{
+    margin: 1.5rem 0;
+}
+.list-item1{
+flex-basis: 30rem;
+line-height: 2rem;
+}
+footer{
+    width: 100%;
+    height: 6rem;
+    text-align: center;
+    background: black;
+    color: white;
+    font-size: 1.4rem;
+}
+
+
+
+/* responsive starts here */
+@media(max-width:992px){
+
+}
+@media(max-width:768px){
+    .course-main{
+        height: auto;
+    } 
+    .course-body{
+        margin-bottom: 7rem; 
+    } 
+}
+@media(max-width:600px){
+    html{
+        font-size: 48.5%;
+    }
+    header{
+        flex-direction: column;
+    }
+    nav ul{
+        padding-left: 2.5rem;
+    }
+    nav li{
+       display: block;
+       margin-right: 0;
+       margin: 1rem 0;
+    }
+    #banner {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        padding: 15rem 2rem;
+        margin-top: 2rem;
+    }
+    .banner-text p{
+        margin: 4rem auto;
+    }
+    .banner-text button{
+        margin-bottom: 5rem;
+    }
+    #item{
+       flex-wrap: wrap;
+       height: 70rem;
+    }
+    .item__content-img{
+        width: 8rem;
+        height: 8rem;
+        
+    }
+    .course-list{
+        height: auto;
+        
+    }
+}
+@media(max-width:400px){
+    html{
+        font-size: 38.5%;
+    } 
+    nav ul{
+        padding-left: 1.5rem;
+    }
+    nav li{
+       display: block;
+       margin-right: 0;
+       margin: 1rem 0;
+    }
+}
+/* responsive ends here */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* header ends here */
