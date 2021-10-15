@@ -367,6 +367,9 @@ footer{
         height: auto;
         
     }
+    .test-body p{
+        padding-right: 2rem;
+    }
 }
 @media(max-width:400px){
     html{
